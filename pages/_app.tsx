@@ -23,6 +23,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         {/* Use minimum-scale=1 to enable GPU rasterization */}
         <meta name="viewport" content={"user-scalable=0, initial-scale=1," + "minimum-scale=1, width=device-width, height=device-height"} />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=optional"
+          rel="stylesheet"
+        />
         {/* <link rel="preconnect" href="https://fonts.gstatic.com" />
                     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" /> */}
         {/* <link rel="shortcut icon" href="https://cdn-portal.centraldofranqueado.com.br/cms/2021/03/26/605dd81f4b704favicon.png" /> */}

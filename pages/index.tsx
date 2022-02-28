@@ -37,6 +37,9 @@ const IconList= styled.ul`
 const IconListItem=  styled.li`
 `
 
+const Button = styled.a`
+`
+
 export default function Home() {
   return (
     <div>
@@ -52,6 +55,12 @@ export default function Home() {
           <VideoIframe>
             <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="790" height="444" src="https://www.youtube.com/embed/1AlscF21e2k?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=1&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Feltonfilho.com&amp;widgetid=1" id="widget2" data-gtm-yt-inspected-30274954_16="true"></iframe>
           </VideoIframe>
+
+          <IconList>
+            <IconListItem>
+              Comprovado por + 1500 alunos
+            </IconListItem>
+          </IconList>
         </VideoContainer>
       </Video>
       <Footer />
