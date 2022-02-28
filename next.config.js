@@ -4,6 +4,10 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  images: {
+    domains: ['eltonfilho.com'],
+    //path: `/franquias/_next/image`,
+  },
 }
 
 module.exports = nextConfig
