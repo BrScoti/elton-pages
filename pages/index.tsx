@@ -154,7 +154,7 @@ export default function Home() {
         <meta property="og:description" content="CRIE O HÁBITO DA LEITURA E ENTENDA O QUE VOCÊ LÊ EM 30 DIAS CRIE O HÁBITO DA LEITURA E ENTENDA O QUE VOCÊ LÊ EM 30 DIAS Assista ao vídeo abaixo para entender como funciona o método. https://youtu.be/1AlscF21e2k Comprovado por + 1500 alunos Fazer minha inscrição agora! 12x de R$48,42 ou R$497 à vista […]"></meta>
         <meta property="og:url" content="https://eltonfilho.com/leitorem30dias/"></meta>
         <meta property="og:site_name" content="Elton Luiz"></meta>
-        <meta property="article:modified_time" content={new Date()}></meta>
+        {/* <meta property="article:modified_time" content={(new Date()).toString()}></meta> */}
         <meta property="og:image" content="https://eltonfilho.com/wp-content/uploads/elementor/thumbs/LOGO-LEITOREM30DIAS-ph116vdnev3lfd3u58cjzjcjofzwypfhcupgd2uqg2.png"></meta>
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="twitter:label1" content="Est. tempo de leitura"></meta>
