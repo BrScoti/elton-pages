@@ -32,7 +32,6 @@ const VideoIframe = styled.div`
     border-radius: 22px;
     margin:0;
     line-height:1;
-    width: max-content;
   }
 `
 
