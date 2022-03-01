@@ -176,9 +176,9 @@ export default function Home() {
             Assista ao vídeo abaixo para entender como funciona o método.
           </p>
 
-          <VideoIframe>
+          {/* <VideoIframe>
             <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="790" height="444" src="https://www.youtube.com/embed/1AlscF21e2k?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=1&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Feltonfilho.com&amp;widgetid=1" id="widget2" data-gtm-yt-inspected-30274954_16="true"></iframe>
-          </VideoIframe>
+          </VideoIframe> */}
 
           <IconList>
             <IconListItem>
