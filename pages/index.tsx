@@ -1,8 +1,6 @@
-import { faCheck, faExclamation, faSquareCheck } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 import Image from "next/image";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Container } from "../components/reusable/container";
 import { Footer } from "../components/reusable/footer";
 import { HeadingTitle } from "../components/reusable/heading-title";
@@ -21,18 +19,28 @@ const VideoContainer = styled(Container)`
 `
 
 const VideoIframe = styled.div`
-  width: fit-content;
-  height: fit-content;
-  border: 5px solid ${props => props.theme.colors.accent};
+${({ theme }) => css`
+
+  /* width: fit-content;
+  height: fit-content; */
+  border: 5px solid ${theme.colors.accent};
   border-radius: 22px;
   padding:0;
-
+  display:flex;
+  
+  @media(min-width: ${theme.medias.lg}) {
+    //width: 90vw;
+  }
+  
   iframe{
     border: none;
     border-radius: 22px;
     margin:0;
     line-height:1;
+    height: 100%;
+    width: 100%;
   }
+  `}
 `
 
 const IconList = styled.ul`
@@ -41,9 +49,8 @@ const IconList = styled.ul`
 
 const IconListItem = styled.li`
   color: #333;
-  svg{
-    width: 1.5em;
-    color: #4294fc;
+  img{
+    filter: invert(59%) sepia(45%) saturate(5552%) hue-rotate(195deg) brightness(102%) contrast(98%);
   }
   display: flex;
   align-items: center;
@@ -125,9 +132,9 @@ const NotIs = styled.div`
     font-size: 17px;
     font-weight: 500;
     line-height: 3.7em;
-    svg{
-      width: 10px;
-      color: #fc4242;
+    img{
+      //width: 10px;
+      filter: invert(31%) sepia(41%) saturate(2020%) hue-rotate(330deg) brightness(120%) contrast(98%);
     }
   }
 `
@@ -175,7 +182,7 @@ export default function Home() {
 
           <IconList>
             <IconListItem>
-              <FontAwesomeIcon icon={faSquareCheck} />
+              <Image src='/icons/square-check-solid.svg' height={30} width={30}  />
               Comprovado por + 1500 alunos
             </IconListItem>
           </IconList>
@@ -206,7 +213,7 @@ export default function Home() {
           <IconList>
             {forWhoContent.map((item, index) => (
               <IconListItem key={index}>
-                <FontAwesomeIcon icon={faCheck} />
+                <Image src={'/icons/check-solid.svg'} height={20} width={20} />
                 {item};
               </IconListItem>
             ))}
@@ -222,7 +229,7 @@ export default function Home() {
           <IconList>
             {notIsContent.map((item, index) => (
               <IconListItem key={index}>
-                <FontAwesomeIcon icon={faExclamation} />
+                <Image src='/icons/exclamation-solid.svg' height={20} width={30} />
                 {item};
               </IconListItem>
             ))}
